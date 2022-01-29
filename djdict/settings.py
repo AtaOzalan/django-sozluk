@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "Not a secret! Delete this arg in prod
 DEBUG = True
 
 # SECURITY WARNING: don't allow any other hosts except your real host in production!
-ALLOWED_HOSTS = ["134.209.81.163"]
+ALLOWED_HOSTS = ["134.209.81.163","mobilasyon.com","www.mobilasyon.com"]
 
 GRAPHENE = {"SCHEMA": "dictionary_graph.schema.schema"}
 
@@ -102,16 +102,24 @@ WSGI_APPLICATION = "djdict.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": os.environ.get("SQL_ENGINE"),
-        "NAME": os.environ.get("SQL_DATABASE"),
-        "USER": os.environ.get("SQL_USER", "user"),
-        "PASSWORD": os.environ.get("SQL_PASSWORD"),
-        "HOST": os.environ.get("SQL_HOST"),
-        "PORT": os.environ.get("SQL_PORT"),
+if DEBUG:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": "mobilasyonDB"
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'mobilasyonDB',
+            'USER': 'mobilasyon_admin',
+            'PASSWORD': '159357741369asd',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
 
 
 # Password validation
