@@ -150,7 +150,11 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 REDIS_URL = "redis://redis:6379/1"
 CELERY_BROKER_URL = REDIS_URL
-CELERY_EMAIL_TASK_CONFIG = {"default_retry_delay": 40}
+# CELERY_EMAIL_TASK_CONFIG = {"default_retry_delay": 40}
+CELERY_EMAIL_TASK_CONFIG = {
+    'name': 'djcelery_email_send',
+    'ignore_result': True,
+}
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
