@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     "dictionary_graph",
     "graphene_django",
     "widget_tweaks",
-    
+    "djcelery_email",
 ]
 
 MIDDLEWARE = [
@@ -89,13 +89,13 @@ else:
     }
 
 
-EMAIL_HOST = '134.209.81.163'
-EMAIL_PORT = 1025
-EMAIL_HOST_USER = None
-EMAIL_HOST_PASSWORD = None
-EMAIL_USE_TLS = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'localhost'
+EMAIL_HOST_PASSWORD = 'password'
+EMAIL_USE_TLS = True
 
-EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 CELERY_EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 

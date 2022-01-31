@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     # Third Party
     "graphene_django",
     "widget_tweaks",
-    
+    "djcelery_email",
+    "djcelery",
 ]
 
 MIDDLEWARE = [
@@ -145,7 +146,7 @@ SESSION_COOKIE_AGE = 1209600
 SESSION_ENGINE = "dictionary.backends.sessions.db"
 
 
-EMAIL_BACKEND = "djcelery_email.backends.CeleryEmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 REDIS_URL = "redis://redis:6379/1"
 CELERY_BROKER_URL = REDIS_URL

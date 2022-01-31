@@ -1,5 +1,7 @@
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
+from celery import app as celery
+_app__all__ = ('Celery_app',)
 
 
 class BaseDebugCommand(BaseCommand):
