@@ -74,15 +74,15 @@ if DEBUG:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
-            "NAME": "mobilasyon"
+            "NAME": "mobilasyondb"
         }
     }
 else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'mobilasyon',
-            'USER': 'postgres',
+            'NAME': 'mobilasyondb',
+            'USER': 'mobilasyon_admin',
             'PASSWORD': '159357741369asd',
             'HOST': 'localhost',
             'PORT': '',
