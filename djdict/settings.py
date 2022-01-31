@@ -117,7 +117,7 @@ else:
             'NAME': 'mobilasyonDB',
             'USER': 'mobilasyon_admin',
             'PASSWORD': '159357741369asd',
-            'HOST': 'localhost',
+            'HOST': '134.209.81.163',
             'PORT': '',
         }
     }

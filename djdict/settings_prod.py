@@ -1,3 +1,4 @@
+
 import os
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
@@ -83,7 +84,7 @@ else:
             'NAME': 'mobilasyonDB',
             'USER': 'mobilasyon_admin',
             'PASSWORD': '159357741369asd',
-            'HOST': 'localhost',
+            'HOST': '134.209.81.163',
             'PORT': '',
         }
     }
