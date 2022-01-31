@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     "dictionary_graph",
     "graphene_django",
     "widget_tweaks",
-    "djcelery_email",
+    
 ]
 
 MIDDLEWARE = [

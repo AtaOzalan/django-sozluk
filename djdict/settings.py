@@ -55,8 +55,7 @@ INSTALLED_APPS = [
     # Third Party
     "graphene_django",
     "widget_tweaks",
-    "djcelery_email",
-    "djcelery",
+    
 ]
 
 MIDDLEWARE = [
