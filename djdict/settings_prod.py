@@ -92,8 +92,8 @@ else:
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ata@4play.com'
-EMAIL_HOST_PASSWORD = 'DBkQp8EML2prJx8'
+EMAIL_HOST_USER = 'deneme@mobilasyon.com'
+EMAIL_HOST_PASSWORD = 'deneme'
 EMAIL_USE_TLS = True
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
