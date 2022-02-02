@@ -26,7 +26,7 @@ from dictionary.sitemaps import sitemaps
 urlpatterns = [
     path("", include("dictionary.urls")),
     path("graphql/", include("dictionary_graph.urls")),
-    path("admin2/", admin.site.urls),
+    path("admin/", admin.site.urls),
     # i18n
     path("jsi18n/", JavaScriptCatalog.as_view(packages=["dictionary"]), name="javascript-catalog"),
     path("i18n/", include("django.conf.urls.i18n")),
