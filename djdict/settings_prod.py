@@ -90,10 +90,10 @@ else:
     }
 
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'mobilasyonsozluk@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_USE_TLS = True
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
