@@ -90,11 +90,11 @@ else:
     }
 
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'deneme@mobilasyon.com'
-EMAIL_HOST_PASSWORD = 'deneme'
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 CELERY_EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
