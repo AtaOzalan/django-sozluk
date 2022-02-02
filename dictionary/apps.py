@@ -16,7 +16,7 @@ class DictionaryConfig(AppConfig):
 
     DOMAIN = "mobilasyon.com"
     PROTOCOL = "http"
-    FROM_EMAIL = "ata@4play.com"
+    FROM_EMAIL = "mobilasyonsozluk@gmail.com"
 
     # Default options for content object counts
     TOPICS_PER_PAGE_DEFAULT = 50  # For guests only
