@@ -1,12 +1,21 @@
 from functools import wraps
 
+
 from django.contrib.admin.models import CHANGE, LogEntry
 from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import redirect, reverse
+from django.contrib.admin import AdminSite
 
 
 # Admin site specific utilities
+class EventAdminSite(AdminSite):
+    site_header = 'EVENT ADMIN'
+    site_title = 'EVENT ADMIN PORTAL'
+    
+    index_title = 'WELCOME TO EVENT PORTAL'
+    
 
+event_admin_site = EventAdminSite(name='event_admin')
 
 def log_admin(msg, authorizer, model_type, model_object, flag=CHANGE):
     LogEntry.objects.log_action(
