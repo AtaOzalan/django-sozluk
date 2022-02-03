@@ -38,7 +38,6 @@ SITE_ID = 1
 
 INSTALLED_APPS = [
     "djdict",
-    "django-sozluk",
     "mobilasyon",
     "django.contrib.auth",
     "django.contrib.contenttypes",
