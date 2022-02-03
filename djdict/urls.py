@@ -19,7 +19,7 @@ from django.contrib.sitemaps import views as sitemap_views
 from django.urls import include, path
 from django.views.decorators.gzip import gzip_page
 from django.views.i18n import JavaScriptCatalog
-from polls.admin import event_admin_site
+from dictionary.utils.admin import event_admin_site
 
 from dictionary.sitemaps import sitemaps
 
