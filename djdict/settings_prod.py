@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = int(os.environ.get("DEBUG", default=0))
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(" ")
+ALLOWED_HOSTS = ["134.209.81.163","mobilasyon.com","www.mobilasyon.com","localhost","127.0.0.1"]
 
 GRAPHENE = {"SCHEMA": "dictionary_graph.schema.schema"}
 
@@ -70,15 +70,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "djdict.wsgi.application"
 
-if DEBUG:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": "mobilasyondb"
-        }
-    }
-else:
-    DATABASES = {
+# if DEBUG:
+#     DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.sqlite3",
+#             "NAME": "mobilasyondb"
+#         }
+#     }
+# else:
+DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'mobilasyondb',
