@@ -463,7 +463,7 @@ class TopicListHandler:
         if self.slug != "today-in-history":
             return None
 
-        default = settings.YEAR_RANGE[0]
+        default = settings.YEAR_RANGE
 
         if year is None:
             return default
