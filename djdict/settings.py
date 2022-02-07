@@ -147,7 +147,7 @@ SESSION_COOKIE_AGE = 1209600
 SESSION_ENGINE = "dictionary.backends.sessions.db"
 
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 REDIS_URL = "redis://127.0.0.1:6379"
 CELERY_BROKER_URL = REDIS_URL
