@@ -148,6 +148,11 @@ SESSION_ENGINE = "dictionary.backends.sessions.db"
 
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
 
 REDIS_URL = "redis://127.0.0.1:6379"
 CELERY_BROKER_URL = REDIS_URL
