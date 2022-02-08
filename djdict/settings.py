@@ -148,10 +148,10 @@ SESSION_ENGINE = "dictionary.backends.sessions.db"
 
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'mobilasyonsozluk@gmail.com'
-EMAIL_HOST_PASSWORD = 'cbdligwxtzqiojyl'
+EMAIL_HOST_USER = "mobilasyonsozluk@gmail.com"
+EMAIL_HOST_PASSWORD = "cbdligwxtzqiojyl"
 EMAIL_USE_TLS = True
 
 REDIS_URL = "redis://127.0.0.1:6379"
