@@ -147,12 +147,12 @@ SESSION_COOKIE_AGE = 1209600
 SESSION_ENGINE = "dictionary.backends.sessions.db"
 
 
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 25
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'mobilasyonsozluk@gmail.com'
+EMAIL_HOST_PASSWORD = 'cbdligwxtzqiojyl'
+EMAIL_USE_TLS = True
 
 REDIS_URL = "redis://127.0.0.1:6379"
 CELERY_BROKER_URL = REDIS_URL
