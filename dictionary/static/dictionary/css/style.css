@@ -1,8 +1,8 @@
 :root {
     --primary: #092e20;
     --primary-dark: #0d2f18;
-    --primary-light: #16784f;
-    --primary-light-matt: #16784f;
+    --primary-light: rgb(255, 201, 43);
+    --primary-light-matt: rgb(255, 201, 43);
     --light-0-invert: #242526;
     --light-0: #fff;
     --light-1: #e3e3e3;
@@ -25,11 +25,11 @@
 }
 
 body.dark {
-    --primary: rgba(43, 255, 166, .75);
-    --primary-dark: rgba(43, 255, 166, .67);
+    --primary: rgb(255, 201, 43);
+    --primary-dark: rgb(255, 201, 43);
     --primary-light: var(--primary);
-    --primary-light-matt: rgba(43, 255, 166, 1);
-    --primary-light-white-fore: rgba(43, 255, 166, .43);
+    --primary-light-matt: rgb(255, 201, 43);
+    --primary-light-white-fore: rgb(255, 201, 43);
     --light-0-invert: #fff;
     --light-0: #242526;
     --light-1: #272727;
@@ -167,11 +167,11 @@ nav.sub-nav ul li {
 }
 
 nav.sub-nav ul li.active {
-    border-color: var(--primary);
+    border-color: rgb(255, 201, 43);
 }
 
 nav.sub-nav ul li:hover {
-    border-color: var(--primary);
+    border-color: rgb(255, 201, 43);
     cursor: pointer;
 }
 
@@ -667,7 +667,7 @@ nav#user-navigation > a:active {
 
 body a,
 body a[role="button"]:not(.dropdown-item) {
-    color: var(--primary-light);
+    color: rgb(255, 201, 43);
 }
 
 .text-formatted img,
