@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "Not a secret! Delete this arg in prod
 DEBUG = True
 
 # SECURITY WARNING: don't allow any other hosts except your real host in production!
-ALLOWED_HOSTS = ["134.209.81.163","mobilasyon.com","www.mobilasyon.com","localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["134.209.81.163", "mobilasyon.com" , "www.mobilasyon.com" , "localhost" , "127.0.0.1"]
 
 GRAPHENE = {"SCHEMA": "dictionary_graph.schema.schema"}
 
