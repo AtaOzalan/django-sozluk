@@ -186,7 +186,7 @@ LANGUAGES = (
 
 PASSWORD_RESET_TIMEOUT = 86400
 LOGIN_URL = "/login/"
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/topic/teknoloji-hakkinda/"
 
 STATIC_ROOT = BASE_DIR / "static"
 STATIC_URL = "/static/"
